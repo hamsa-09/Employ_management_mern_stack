@@ -1,0 +1,100 @@
+html,body{
+  overflow: hidden;
+}
+.home {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 20px;
+    flex-grow: 1;
+  }
+
+  .form{
+   width: 40%;
+   padding: 10px;
+   background-color: rgb(185, 169, 174);
+   border-radius: 20px;
+   
+
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+  
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+  .btn-container button{
+    cursor: pointer;
+    padding: 10px;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 20px;
+    background-color: rgb(66, 43, 75);
+    color: aliceblue;
+    transition: all 1s ease,transform 1s ease;
+  }
+  .btn-container button:hover{
+    transition: scale(1.09);
+    background-color: rgb(165, 109, 216);
+    color: #050505;
+  }
+  .message {
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .message.success {
+    background-color: rgb(69, 232, 69);
+    color: white;
+  }
+  
+  .message.error {
+    background-color: rgb(217, 47, 47);
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .home{
+      margin-top:0%;
+      overflow: hidden;
+    }
+    .form {
+      width: 85%;
+    }
+    .form-group{
+        padding: 10px;
+    }
+    .form-group input{
+        width: 100%;
+    }
+  }
+  
